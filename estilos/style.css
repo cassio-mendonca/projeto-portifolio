@@ -26,6 +26,7 @@ body {
   background-color: var(--fundo-principal);
   color: var(--texto);
 }
+/*Reset Geral body*/
 header{
   background-color: var(--destaque);
   color: var(--texto);
@@ -35,6 +36,7 @@ header{
   position: sticky;
   top: 0;
   z-index: 1;
+  /*Configurando header e o deixando colado na imagem*/
 }
 nav#menu > ul {
   list-style: none;
@@ -48,6 +50,7 @@ nav#menu a{
   padding: 12px 15px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
+  /*Estilisando os links no header*/
 }
 nav#menu a:hover{
   background-color: var(--destaque-inverso);
@@ -64,6 +67,7 @@ section#ficha {
   padding: 20px;
   border-radius: 8px;
   grid-column: 2;
+  /**/
 }
 
 section#ficha img.foto{
@@ -77,13 +81,13 @@ section#ficha img.foto{
   display: block;
   margin: auto;
   margin-bottom: 15px;
+  /*Formatando a foto e colocando o efeito do circulo azul ao redor da foto*/
 }
 section#ficha h1 {
   color: var(--destaque);
   margin: 15px;
   font-size: 1.8em;
   text-align: center;
-
 }
 section#ficha > p {
   text-align: justify;
@@ -95,6 +99,7 @@ div#social {
   font-size: 1.7em;
   gap: 1em;
   margin-top: 15px;
+  /*Fortação de div com os links de rede rocial */
 }
 div#social a{
   color: var(--destaque);
@@ -117,13 +122,14 @@ article h2{
   color: var(--destaque);
   margin-bottom: 10px;
   padding-bottom: 20px;
+  /*Formatação na div que irá pai do vídeo*/
 }
 .video-container{
   position: relative;
   width: 100%;
   margin: auto;
   aspect-ratio: 16/9;
-  
+  /*Responsividade vídeo*/
 }
 .video-container iframe{
   position: absolute;
@@ -133,11 +139,13 @@ article h2{
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  /*Responsividade vídeo*/
 }
 #skill-container{
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  /**/
 }
 #skill-container .info {
   display: flex;
@@ -157,6 +165,7 @@ article h2{
   height: 8px;
   background-color: var(--fundo-principal);
   border-radius: 4px;
+  /*Barra de progresso formatação*/
 }
 #skill-container .progresso{
   height: 100%;
@@ -167,6 +176,7 @@ article h2{
   display: flex;
   flex-flow: column-reverse nowrap;
   gap: 20px;
+    /*Efeito para quebra em crescimento de tela */
 }
 
 #formacao-container .curso {
@@ -209,8 +219,13 @@ transition: border-color 0.5s, border-width 0.5s;
  border-left-width: 15px;
  cursor: pointer; 
 }
-
-
+.projeto h3 a {
+  text-decoration: none;
+  color: var(--destaque);
+}
+.projeto h3 a:hover{
+  color: var(--destaque-inverso);
+}
 footer{
 background-color: var(--destaque);
 color: var(--texto-inverso);
